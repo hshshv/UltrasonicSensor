@@ -45,7 +45,7 @@ float UltrasonicSensor::GetAvg(int times)
   float sum = 0;
   for (int i = 0; i < times; ++i)
   {
-    sum = + Get();
+    sum = sum + Get();
     delay(1);
   }
   return (sum / times);
