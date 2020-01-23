@@ -37,7 +37,7 @@ float UltrasonicSensor::Get()
 
 float UltrasonicSensor::GetAvg()
 {
-  GetAvg(5);
+  return(GetAvg(5));
 }
 
 float UltrasonicSensor::GetAvg(int times)
