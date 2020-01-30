@@ -19,5 +19,6 @@ class UltrasonicSensor
     bool Blocked();
     bool Blocked(byte times);
     bool Activated();
+    float CheckSpeed();
 };
 #endif

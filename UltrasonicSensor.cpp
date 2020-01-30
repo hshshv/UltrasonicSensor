@@ -59,3 +59,14 @@ bool UltrasonicSensor::Activated()
 {
   return (Blocked());
 }
+
+float UltrasonicSensor::CheckSpeed()
+{
+  float before = Get();
+  delay(500);
+  float sum = before - Get();
+  float mshoo = sum / 5; //התקדמות בעשירית השנייה, בסנטימטרים
+  mshoo = mshoo * 36000; //התקדמות בסנטימטרים לשעה
+  mshoo = mshoo / 100000; //התקדמות בק"מ לשעה
+  return(mshoo);
+}
