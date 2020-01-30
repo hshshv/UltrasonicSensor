@@ -1,10 +1,9 @@
 #ifndef UltrasonicSensor_h
 #define UltrasonicSensor_h
 
-#include "Sensor.h"
 #include "Arduino.h"
 
-class UltrasonicSensor : public Sensor
+class UltrasonicSensor
 {
   private:
     int TrigPin;
