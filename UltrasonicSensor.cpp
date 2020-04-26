@@ -5,9 +5,9 @@ UltrasonicSensor::UltrasonicSensor (int Trig, int Echo)
   SetPins(Trig, Echo);
 }
 
-UltrasonicSensor::UltrasonicSensor()
+UltrasonicSensor::UltrasonicSensor():UltrasonicSensor(4, 5)
 {
-  UltrasonicSensor(4, 5);
+  
 }
 
 void UltrasonicSensor::SetPins(int Trig, int Echo)
